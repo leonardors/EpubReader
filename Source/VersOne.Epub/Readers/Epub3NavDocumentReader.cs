@@ -75,6 +75,13 @@ namespace VersOne.Epub.Internal
             {
                 if  (li.Anchor?.Href != null && li.Anchor.Href.Length > 0 && li.Anchor.Href[0] != '/')
                 {
+                    var index = li.Anchor.Href.IndexOf(rootFolder);
+
+                    if (index != -1)
+                    {
+                        li.Anchor.Href = li.Anchor.Href.Substring(index + rootFolder.Length + 1);
+                    }
+
                     var relativeHref = $"{rootFolder}/{li.Anchor.Href}";
                     li.Anchor.Href = relativeHref;
                 }
