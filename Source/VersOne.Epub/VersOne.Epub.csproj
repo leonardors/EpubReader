@@ -6,8 +6,8 @@
         <Product />
         <Description />
         <Copyright>vers, 2015-2019</Copyright>
-        <Version>3.0.3</Version>
-        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <Version>3.0.4</Version>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="System.IO.Compression" Version="4.3.0" />
